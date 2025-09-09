@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
+
+body {
+  background-color: #c8c8e4;
+  /* Light purple background */
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+
+}
+
+.Container {
+  position: relative;
+  padding: 10px;
+  inset: 200px 0 0 calc(50% - 200px);
+  background-color: #222;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: auto;
+  /* adjust to fit */
+  border-radius: 10px;
+  width: 420px;
+  height: 525px;
+
+
+  grid-template-areas:
+    "Display  Display Display Display"
+    "AC       AC      Div     mult"
+    "num7     num8    num9    minus"
+    "num4     num5    num6    addi"
+    "num1     num2    num3    equal"
+    "num0     num0    dec    equal";
+}
+
+button {
+  color: beige;
+
+  border: 0.5px solid black;
+
+  font-size: large;
+}
+
+button:hover {
+  color: #222;
+}
+
+.item {
+  display: flex;
+  border: none;
+  justify-content: end;
+  font-size: large;
+  margin-right: 10px;
+  font-size: 33px;
+  align-items: center;
+  grid-area: Display;
+  background-color: #222;
+}
+
+.item:hover {
+  color: white;
+}
+
+.item1 {
+
+  grid-area: AC;
+  background-color: rgb(176, 66, 66);
+}
+
+.item2 {
+  grid-area: Div;
+  background-color: #777;
+}
+
+.item3 {
+  grid-area: mult;
+  background-color: #777;
+}
+
+.item4 {
+  grid-area: num7;
+  background-color: #555;
+}
+
+.item5 {
+  grid-area: num8;
+  background-color: #555;
+}
+
+.item6 {
+  grid-area: num9;
+  background-color: #555;
+}
+
+.item7 {
+  grid-area: minus;
+  background-color: #777;
+}
+
+.item8 {
+  grid-area: num4;
+  background-color: #555;
+}
+
+.item9 {
+  grid-area: num5;
+  background-color: #555;
+}
+
+.item10 {
+  grid-area: num6;
+  background-color: #555;
+}
+
+.item11 {
+  grid-area: addi;
+  background-color: #777;
+}
+
+.item12 {
+  grid-area: num1;
+  background-color: #555;
+}
+
+.item13 {
+  grid-area: num2;
+  background-color: #555;
+}
+
+.item14 {
+  grid-area: num3;
+  background-color: #555;
+}
+
+.item15 {
+  grid-area: equal;
+  background-color: rgb(70, 97, 161);
+}
+
+.item16 {
+  grid-area: num0;
+  background-color: #555;
+}
+
+.item17 {
+  grid-area: dec;
+  background-color: #555;
+}
